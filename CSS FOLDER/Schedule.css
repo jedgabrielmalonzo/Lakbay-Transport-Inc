@@ -1,0 +1,86 @@
+/* Apply Poppins font to the entire body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0F8FF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #da4c2c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; /* Explicit for header */
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Navbar */
+.navbar,
+.navbar .nav-link,
+.navbar-brand {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600; /* Matches 'poppins-semibold' */
+}
+
+.nav-link {
+    font-weight: 400; /* Matches 'poppins-regular' */
+}
+
+/* Station Container */
+.station-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Explicit for station container */
+}
+
+.station-box {
+    background-color: #da4c2c;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px;
+    flex-basis: calc(33.333% - 30px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif; /* Explicit for station box */
+}
+
+@media (max-width: 768px) {
+    .station-box {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 576px) {
+    .station-box {
+        flex-basis: calc(100% - 30px);
+    }
+}
+
+/* Footer */
+footer,
+footer p,
+footer h6,
+footer a {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Additional Sections */
+.card-title,
+.step-highlight,
+.carousel-inner,
+.card-text {
+    font-family: 'Poppins', sans-serif;
+}
